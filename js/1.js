@@ -1,6 +1,7 @@
 
 const btn = document.querySelector(".btn")
 const ekr = document.querySelector(".ekr")
+const btnr = document.querySelector(".btnr")
 
 btn.addEventListener('click', () => {
     const abs = Math.round(Math.random() * 11)
@@ -19,7 +20,9 @@ btn.addEventListener('click', () => {
     
 })
 
-ekr.style.color = red;
+ekr.style.color = ffffff;
+
+btnr.body.style.background = red;
 
 
 

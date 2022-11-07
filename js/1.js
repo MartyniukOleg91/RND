@@ -2,6 +2,7 @@
 const btn = document.querySelector(".btn")
 const ekr = document.querySelector(".ekr")
 const btnr = document.querySelector(".btnr")
+const div = document.querySelector(".div")
 
 btn.addEventListener('click', () => {
     const abs = Math.round(Math.random() * 11)
@@ -20,11 +21,13 @@ btn.addEventListener('click', () => {
     
 })
 
-ekr.style.color = ffffff;
+function getRandomHexColor() {
+  const randomaizer = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return randomaizer
+}
+  btnr.addEventListener('click', ()  => {
+    let color = getRandomHexColor();
+    // ekr.style.color = color;
+    div.style.backgroundColor = color;
+  })
 
-btnr.body.style.background = red;
-
-
-
-
- 
